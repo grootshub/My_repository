@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>retrieve the data</title>
+</head>
+<body>
+	<script type="text/javascript">
+	    //To store the data in local storage
+		localStorage.setItem("Vehiclename","Maruthi");
+		//Before using web storage,check browser support for local Storage.
+		if(window.localStorage){
+	       let a=localStorage.getItem("Vehiclename");
+	       //to retieve the data
+		   console.log(a);}
+		else{
+			console.log("Browse not support");
+		}
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>access the object</title>
+</head>
+<body>
+    <p id="demo">click the button to see the result...</p>
+    <input type="button" value="submit" onclick="demo1()">
+	<script>
+	    //function to display the output
+		function demo1(){
+			var person = {name: "John", age: 50}; 
+			//Use getElementById() and innerHTML to display your output.
+		    document.getElementById("demo").innerHTML = person.name + " is " + person.age + " years old man.";}
+	</script>
+</body>
+</html>

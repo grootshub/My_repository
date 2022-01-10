@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>nonenumerable</title>
+</head>
+<body>
+<script type="text/javascript">
+	let person = {  
+	 name:"java",   
+	 toString() 
+	 {     
+	 	return this.name1;   
+	 } 
+	}; 
+    //display the properties of the object
+    for (let key in person) {
+	  console.log(key);
+    }
+   //using object defining property  make the object non enumerable
+   Object.defineProperty(person, 'java', {enumerable: false});
+</script>
+</body>
+</html>

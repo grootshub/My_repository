@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>sessionstorage</title>
+</head>
+<body>
+	<script type="text/javascript">
+	//to store the data in sessionstorage
+	sessionStorage.setItem("1","one");
+	sessionStorage.setItem("2","two");
+	sessionStorage.setItem("3","three");
+	sessionStorage.setItem("4","four");
+	sessionStorage.setItem("5","five");
+	// to get the “own” keys with Object.key
+	let keys = Object.keys(sessionStorage);
+for(let key of keys) {
+	//to retrieve the data from the session storage
+ console.log(`${key}: ${sessionStorage.getItem(key)}`);
+}
+
+	</script>
+
+</body>
+</html>

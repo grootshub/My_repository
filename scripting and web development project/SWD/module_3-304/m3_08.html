@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>local storage</title>
+</head>
+<body>
+	productname:<input type="text" id="item">
+	<input type="button" value="add to cart" onclick="func()"><br>
+	Products in the cart<br>
+	<p id="demo"></p>
+		<script type="text/javascript">
+				let a=0;
+			function func(){
+			let a1=document.getElementById('item').value;
+		    //keys values increase by 1
+			a+=1;
+			//to store the data to local storage
+			localStorage.setItem(a,a1);
+			document.getElementById("demo").innerHTML+=a+" "+a1+"<br>";
+   }
+</script>
+</body>
+</html>

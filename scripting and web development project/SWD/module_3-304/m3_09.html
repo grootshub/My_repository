@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html> 
+<body>
+<div id="part1">
+<p class="ocean">this is a paragraph</p>
+<h2 class="ocean large">this is heading h2</h2>
+<a class="large" href="#">other link</a>
+<p class="danger">this is another paragraph</p>
+<h1 class="danger">this is heading h1</h1>
+<a class="large" href="#">some link</a>
+</div>
+<div id="part2">
+<p class="danger">this is another paragraph</p>
+ <a class="large" href="#">some other link</a>
+<h1 class="danger large">this is heading h1</h1>
+<p class="ocean">this is a paragraph</p>
+<h2 class="danger">this is heading h2</h2>
+<a class="ocean" href="#">document link</a>
+</div>
+// Get the element, add a click listener...
+<script type="text/javascript">
+document.getElementById("part1").addEventListener("click", function(e) {
+	// e.target is the clicked element!
+	if(e.target.tagName == "A") {
+		e.target.remove()
+		
+	}
+});
+document.getElementById("part2").addEventListener("click", function(e) {
+	// e.target is the clicked element!
+	if(e.target.tagName == "A") {
+		e.target.remove()
+		
+	}
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<form>
+	<table>
+		<tr>
+	<td>Fullname:<br></td>
+    <td><input type="text" placeholder="Fullname" id="text1" ></td><td><p style="color: red;" id='d'></p><br></td>
+    </tr>
+    <tr>
+    	<td>
+    Email:<br></td>
+    <td><input type="email" placeholder="Email" id="text2" /></td><td><p style="color: red;" id='i'></p><br /></td></tr>
+    <tr>
+   <td> UserId:<br></td>
+    <td><input type="number" placeholder="UserId" id="text3" /></td><td><p style="color: red;" id='n'></p><br /></td>
+    </tr>
+    <tr>
+    	<td>
+    Password:<br></td>
+   <td> <input type="password" placeholder="Password" id="text4" /></td><td><p style="color: red;" id="e"></p><br /></td>
+    </tr>
+    <tr>
+    	<td>
+    Gender:<br></td>
+   <td> <select><option>male</option><option>female</option><option selected="">gender</option></select><br>
+    <br></td>
+    </tr>
+    <tr><td>
+    <input type="button" value="Submit" style="color: blue;" onclick="javascript:validate()" /></td>
+    </tr>
+    </table>
+</form>
+<script type="text/javascript">
+function validate()
+{
+    if(   document.getElementById("text1").value.match(/\w/g))
+       
+    {
+        document.getElementById('d').innerHTML= "" ;
+        //location.href="run.html";
+    }
+    else
+    {
+        document.getElementById('d').innerHTML= "please enter valid name" ;
+       // location.href="fail.html";
+    }
+    if(document.getElementById("text2").value.match(/\w+(\d)*@+(\w{5})*(\.\w{2,3})/g)){
+
+    	document.getElementById('i').innerHTML= "" ;
+    }
+    else{
+    	document.getElementById('i').innerHTML= "please enter valid email" ;
+    }
+    if(document.getElementById("text3").value.match(/[0-9]/g)){
+    	document.getElementById('n').innerHTML= "" ;
+    }
+    else{
+    	document.getElementById('n').innerHTML= "please enter the valid UserId" ;
+    }
+    if(document.getElementById("text4").value .match(/[a-b A-z]*[0-9]{1}/g)){
+
+    	document.getElementById('e').innerHTML= "" ;
+    }
+else{
+
+	document.getElementById('e').innerHTML= "please enter valid password " ;
+
+}
+}
+</script>
+</body>
+</html>

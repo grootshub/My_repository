@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Train</title>
+	<style type="text/css">
+		#train{
+			position: relative;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+<img id="train" src="https://js.cx/clipart/train.gif">
+  <script type="text/javascript">
+  	train.onclick=function()
+  	{
+  		let start=Date.now();
+  		let timer=setInterval(function()
+  		{
+  			let timepassed=Date.now()-start;
+  			train.style.left=timepassed/5+'px';
+  			if(timepassed>2000) clearInterval(timer);
+
+  		}, 20);
+}
+</script>
+</body>
+</html>

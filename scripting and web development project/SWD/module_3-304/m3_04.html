@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+//links with a tags
+<a href="http://www.google.com/"><h3>http://www.google.com/</h3></a>
+<a href="/tutorial.html"><h3>/tutorial.html</h3></a>
+<a href="local/path"><h3>local/path</h3></a>
+<a href="ftp://ftp.com/my.zip"><h3>ftp://ftp.com/my.zip</h3></a>
+<a href="http://nodejs.org"><h3>http://nodejs.org</h3></a>
+<a href="http://internal.com/test"><h3>http://internal.com/test</h3></a>
+<script>
+let a=document.getElementsByTagName("a");
+//set external links orange color
+for(i=0;i<a.length;i++)
+{
+if (a[i].getAttribute("href").includes("://")==true)
+a[i].setAttribute("style","color:orange");
+else
+a[i].setAttribute("style","color:green");
+}
+</script>
+</body>
+</html>

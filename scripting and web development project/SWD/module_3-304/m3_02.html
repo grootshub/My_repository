@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<table border="1">
+	<tr>
+	  <th>firstname</th>
+	  <th>lastname</th>
+	  <th>age</th>
+	</tr>
+	<tr>
+	   <td>Jill</td>
+	   <td>smith</td>
+	   <td>50</td>
+	</tr>
+	<tr>
+	   <td>Eve</td>
+	   <td>Jackson</td>
+	   <td>94</td>
+	</tr>
+</table>
+<script type="text/javascript">
+document.querySelector("table").addEventListener("click", function(ele) {
+	// ele.target is the clicked element
+	ele.target.style.background="#00ff00"
+	// the target will be changed to green color
+		
+});
+</script>
+</body>
+</html>

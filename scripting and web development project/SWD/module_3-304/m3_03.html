@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>array into unorder list</title>
+</head>
+<body>
+		<div id="demo"></div>
+		<script type="text/javascript">
+		//array elements
+		var names = ['college','academy','dot','com'];
+		var ul = document.createElement('ul');
+		//add the array elements into unorder list
+		document.getElementById('demo').appendChild(ul);
+        names.forEach(function(str){
+		    var li = document.createElement('li');
+			ul.appendChild(li);
+			li.innerHTML = str;
+		});
+		</script>
+	</body>
+</html>
